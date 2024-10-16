@@ -144,7 +144,12 @@ body{
 .container {
     max-width: 800px;
     margin: 0 auto;
-    text-align: center;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center; 
 }
 
 .problem-title, .solution-title {
@@ -259,4 +264,88 @@ li::before {
     color: #4CAF50;
     margin-right: 8px;
     text-align: left
+}
+.flex-faq {
+    width: 100%;
+    max-width: 9000px;
+    display: flex;
+    justify-content: center;
+}
+.faq-box {
+    background-color: white;
+    border-radius: 110px;
+    box-shadow: 0 7px 7px rgba(29, 29, 29, 0.1);
+    padding: 50px;
+    width: 100%;
+    max-height: 80vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.faq-scroll-container {
+    max-height: calc(80vh - 150px);
+    overflow-y: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.faq-container {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #F4EEFF;
+    box-shadow: 0 2px 5px #F4EEFF;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+.faq-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.4s ease;
+}
+.toggle-icon {
+    font-size: 20px;
+    line-height: 1;
+    margin-right: 10px;
+    transition: transform 0.4s ease;
+}
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+.faq-answer p {
+    margin: 10px 0;
+    padding: 0 10px;
+    text-align: left; /* Align text to the left */
+}
+.faq-button.active .toggle-icon {
+    transform: rotate(45deg);
+}
+.faq-button.active + .faq-answer {
+    max-height: 1000px;
+}
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #8B48FF;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.scroll-to-top.visible {
+    opacity: 1;
 }
