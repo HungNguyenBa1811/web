@@ -15,7 +15,7 @@
                     <p style="font-family: 'Nunito', sans-serif; font-weight: 400; font-size: 16px; position: absolute; top: 20px; left: 240px;">Features</p>
                     <p style="font-family: 'Nunito', sans-serif; font-weight: 400; position: absolute; top: 20px; left: 360px;">Pricing</p>
                     <p style="font-family: 'Nunito', sans-serif; font-weight: 400; position: absolute; top: 20px; left: 470px;">Blog</p>
-                    <p style="font-family: 'Nunito', sans-serif; font-weight: 400; position: absolute; top: 20px; left: 560px;">ChatGPT</p>
+                    <p style="font-family: 'Nunito', sans-serif; font-weight: 400; position: absolute; top: 20px; left: 560px;">FAQ</p>
                 </div>
                 <div class="nav-right flex justify-right items-center gap-5 ">
                     <div class="border-[0.5px] border-solid h-[2vw]"></div>
@@ -133,10 +133,8 @@
             <div class="container_pricing">
                 <p style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 24px; color: rgba(33, 55, 86, 1);">Free</p>
             </div>
-            <br>
             <div class ="free" style="text-align: left;">
                 <p style="font-family: 'Poppins', sans-serif; font-weight: 300; font-size: 16px; color: rgba(33, 55, 86, 1);">Early access to all features of <br> Miles AI with no cost.</p>
-                <br>
                 <span style="font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 28px; color: rgba(33, 55, 86, 1);">$0</span>
                 <span style="font-family: 'Poppins', sans-serif; font-weight: 300; font-size: 14px; color: rgba(33, 55, 86, 1);"> USD</span>
                 <p style="font-family: 'Poppins', sans-serif; font-weight: 300; font-size: 12px; color: rgba(33, 55, 86, 1);">monthly</p>
@@ -150,12 +148,76 @@
                     <li>Lecture summarization</li>
                     <li>PDF summarization</li>
                     <li>20 quizzes per session</li>
-                    <li>Limited ChatGPT</li>
+                    <li>Unlimited ChatGPT</li>
                 </ul>
             </div>
             </div>
             <br><br><br>
-    </div>
-    
+            <div class="flex-faq justify-center">
+                <div class="faq-box justify-center">
+                    <h1 style="font-family: 'Poppins';font-weight: 600; font-size: 35px; color: rgba(33, 55, 86, 1);">Frequently Asked Questions</h1>
+                    <p style="font-family: 'Poppins', sans-serif; font-weight: 300; font-size: 15px; color: rgba(33, 55, 86, 1);">See questions other people also ask</p>
+                    <br>
+                    <div class="faq-container">
+                        <div class="faq-button">
+                            <span class="toggle-icon">+</span>
+                            <p style="font-family: 'Poppins';font-weight: 400; font-size: 15px; color: rgba(33, 55, 86, 1);">Does Miles AI cost?</p>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="font-family: 'Poppins';font-weight: 300; font-size: 15px; color: rgba(33, 55, 86, 1);">No. Miles AI is free to use for now.</p>
+                        </div>
+                    </div>
+        
+                    <div class="faq-container">
+                        <div class="faq-button">
+                            <span class="toggle-icon">+</span>
+                            <p style="font-family: 'Poppins';font-weight: 400; font-size: 15px; color: rgba(33, 55, 86, 1);">How can I contact customer support?</p>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="font-family: 'Poppins';font-weight: 300; font-size: 15px; color: rgba(33, 55, 86, 1);">You can reach our customer support team via email at: hoanganhvu1890z@gmail.com</p>
+                        </div>
+                    </div>
+        
+                    <div class="faq-container">
+                        <div class="faq-button">
+                            <span class="toggle-icon">+</span>
+                            <p style="font-family: 'Poppins';font-weight: 400; font-size: 15px; color: rgba(33, 55, 86, 1);">What are your business hours?</p>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="font-family: 'Poppins';font-weight: 300; font-size: 15px; color: rgba(33, 55, 86, 1);">Our business hours are Monday to Friday, 9 AM to 5 PM EST. We are closed on weekends and major holidays.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <script>
+                document.querySelectorAll('.faq-button').forEach(button => {
+                    button.addEventListener('click', () => {
+                        button.classList.toggle('active');
+                    });
+                });
+            </script>
+        <br><br><br>
+
+        <div class="scroll-to-top">↑</div>
+
+    <script>
+        const scrollToTopButton = document.querySelector('.scroll-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopButton.classList.add('visible');
+            } else {
+                scrollToTopButton.classList.remove('visible');
+            }
+        });
+
+        scrollToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
 </html>
